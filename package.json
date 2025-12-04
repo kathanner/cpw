@@ -1,5 +1,5 @@
 {
-    "name": "CPWcasper",
+    "name": "cpw-casper",
     "description": "Modified Casper for Circle Pit Wellness, by Kat Hanner",
     "demo": "https://demo.ghost.io",
     "version": "5.9.666",
@@ -126,6 +126,11 @@
             "homepage_feature_3_icon": {
                 "type": "text",
                 "default": "Feature 3 icon link",
+                "group": "homepage"
+            },
+            "practice_better": {
+                "type": "text",
+                "default": "url",
                 "group": "homepage"
             },
             "title_font": {
