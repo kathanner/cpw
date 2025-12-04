@@ -39,15 +39,19 @@ into the {body} of the default.hbs template --}}
 {{!-- Features --}}
 <div class="features">
   <div class="uno">
+  <img src="{{@custom.homepage_feature_1_icon}}" />
   <p>{{@custom.homepage_feature_1}}</p>
   </div>
-  <div class="dos">
+  <div class="dos"><img src="{{@custom.homepage_feature_2_icon}}" />
   <p>{{@custom.homepage_feature_2}}</p>
   </div>
   <div class="tres">
+  <img src="{{@custom.homepage_feature_3_icon}}" />
   <p>{{@custom.homepage_feature_3}}</p>
   </div>
 </div>
+{{!-- Practice Better Widget --}}
+<div class="better">{{@custom.practice_better}}</div>
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
 <div class="inner posts">
