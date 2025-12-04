@@ -37,43 +37,14 @@ into the {body} of the default.hbs template --}}
 
 </div>
 {{! First section}}
-    <section class="p-outer">
-        <div class="p-inner">
-            <h2>Venus flytraps</h2>
-            <div class="p-posts-grid">
-                {{! Use the get helper to fetch posts }}
-                {{#get "posts" filter="primary_tag:news" limit="6" }}
-                    {{! Use the foreach helper to loop through available posts }}
-                    {{#foreach posts}}
-                        <article class="p-post-card">
-                            {{! Use the img_url helper to bring in the post's feature image. }}
-                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}" />
-                            <h3><a href="{{url}}">{{title}}</a></h3>
-                        </article>
-                    {{/foreach}}
-                {{/get}}
-            </div>
-        </div>
-    </section>
-    {{! Second section}}
-    <section class="p-outer">
-        <div class="p-inner">
-            <h2>Mars flytraps</h2>
-            <div class="p-posts-grid">
-                {{! Use the get helper to fetch posts }}
-                {{#get "pages" filter="primary_tag:news" limit="6" }}
-                    {{! Use the foreach helper to loop through available posts }}
-                    {{#foreach page}}
-                        <article class="p-post-card">
-                            {{! Use the img_url helper to bring in the post's feature image. }}
-                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}" />
-                            <h3><a href="{{url}}">{{title}}</a></h3>
-                        </article>
-                    {{/foreach}}
-                {{/get}}
-            </div>
-        </div>
-    </section>
+   <section>
+       {{#get "pages" filter="tag:news"}}
+  {{#foreach pages}}
+    <h2>{{title}}</h2>
+    <p>{{excerpt words="33"}}</p>
+  {{/foreach}}
+{{/get}}
+   </section>
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="features"><p>{{{@custom.homepage_feature_1}}}</p></div>
