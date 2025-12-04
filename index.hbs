@@ -36,18 +36,20 @@ into the {body} of the default.hbs template --}}
     {{/match}}
 
 </div>
-{{! First section}}
-   <section>
-       {{#get "pages" filter="tag:news"}}
-  {{#foreach pages}}
-    <h2>{{title}}</h2>
-    <p>{{excerpt words="33"}}</p>
-  {{/foreach}}
-{{/get}}
-   </section>
+{{!-- Features --}}
+<div class="features">
+  <div class="uno">
+  <p>{{@custom.homepage_feature_1}}</p>
+  </div>
+  <div class="dos">
+  <p>{{@custom.homepage_feature_2}}</p>
+  </div>
+  <div class="tres">
+  <p>{{@custom.homepage_feature_3}}</p>
+  </div>
+</div>
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
-    <div class="features"><p>{{{@custom.homepage_feature_1}}}</p></div>
 <div class="inner posts">
 
     <div class="post-feed">
