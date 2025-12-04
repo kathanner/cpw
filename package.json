@@ -98,6 +98,11 @@
                 ],
                 "default": "Logo on cover"
             },
+            "homepage_feature_1": {
+                "type": "text",
+                "default": "Feature test",
+                "group": "post"
+            },
             "title_font": {
                 "type": "select",
                 "options": [
