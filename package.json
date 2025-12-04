@@ -98,6 +98,11 @@
                 ],
                 "default": "Logo on cover"
             },
+            "industry": {
+                "type": "text",
+                "default": "Health and Wellness Coaching",
+                "group": "homepage"
+            },
             "homepage_feature_1": {
                 "type": "text",
                 "default": "Feature 1 headline",
