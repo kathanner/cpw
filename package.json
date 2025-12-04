@@ -101,7 +101,7 @@
             "homepage_feature_1": {
                 "type": "text",
                 "default": "Feature test",
-                "group": "post"
+                "group": "homepage"
             },
             "title_font": {
                 "type": "select",
